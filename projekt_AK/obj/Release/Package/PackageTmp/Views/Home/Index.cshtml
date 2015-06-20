@@ -1,0 +1,477 @@
+﻿
+@using project_AK.Models
+@model projekt_AK.Models.MyViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>@Resource.Witaj!</h1>
+        <h5>@Resource.Link_repo</h5>
+        <p><a href="#" class="btn btn-primary btn-lg">GitHub</a></p>
+    </div>
+</div>
+<hr>
+
+<section id="omnie">
+    <div class="container ">
+        <div class="row text-center">
+            <h1>@Resource.O_mnie</h1>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="~/images/avatar3.jpg" class="img-responsive img-circle center-block" alt="" />
+                <h2>Adam Kostusiak</h2>
+                <h2><a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span></a></h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <h3>@Resource.Umiejetnosci</h3>
+                <div class="panel-group" id="menu_harmonijkowe">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#TEKST1" data-toggle="collapse" data-parent="menu_harmonijkowe"><h4>C#</h4></a>
+                            </div>
+                        </div>
+                        <div id="TEKST1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                        <span class="sr-only">35% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><a href="#TEKST2" data-toggle="collapse" data-parent="menu_harmonijkowe"><h4>SQL</h4></a></div>
+                        </div>
+                        <div id="TEKST2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                        <span class="sr-only">20% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><a href="#TEKST3" data-toggle="collapse" data-parent="menu_harmonijkowe"><h4>HTML</h4></a></div>
+                        </div>
+                        <div id="TEKST3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                        <span class="sr-only">75% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#TEKST4" data-toggle="collapse" data-parent="menu_harmonijkowe"><h4>CSS</h4></a>
+                            </div>
+                        </div>
+                        <div id="TEKST4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                        <span class="sr-only">65% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#TEKST5" data-toggle="collapse" data-parent="menu_harmonijkowe"><h4>JAVASCRIPT</h4></a>
+                            </div>
+                            <div id="TEKST5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+                                            <span class="sr-only">15% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section id="zakladki">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h2>@Resource.Zainteresowania</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#przycisk1" data-toggle="tab"><h4>@Resource.Podroze</h4></a></li>
+                    <li><a href="#przycisk2" data-toggle="tab"><h4>@Resource.Motoryzacja</h4></a></li>
+                    <li><a href="#przycisk3" data-toggle="tab"><h4>@Resource.Sport</h4></a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tab-content ikonki_do_zakladek">
+                    <div class="tab-pane fade in active" id="przycisk1">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+                                <img src="~/images/thailand.jpg" alt="" class="img-responsive img-rounded pull left" />
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                <h3>@Resource.Podroze_Kraj</h3>
+
+                                <p>
+                                    @Resource.Podroze_Opis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="przycisk2">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+                                <img src="~/images/mazda6.png" alt="" class="img-responsive img-rounded pull left" />
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                <h3>@Resource.Motoryzacja</h3>
+                                <p>
+                                    @Resource.Motoryzacja_Opis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="przycisk3">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6 ">
+                                <img src="~/images/realmadrid.png" alt="" class="img-responsive img-rounded center-block" />
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                                <h3>@Resource.Sport_Klub</h3>
+                                <p>
+                                    @Resource.Sport_Opis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section id="galeria">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 galeria_naglowek">
+                <h2>@Resource.Wymarzone_podróże</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 galeria_zdjecia">
+                <a href="#obrazek1" data-toggle="modal"><img src="~/images/wyspy.jpg" alt="" class="img-responsive img-rounded center-block" /></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 galeria_zdjecia">
+                <a href="#obrazek2" data-toggle="modal"><img src="~/images/timesquare.jpg" alt="" class="img-responsive img-rounded center-block" /></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 galeria_zdjecia">
+                <a href="#obrazek3" data-toggle="modal"><img src="~/images/afryka.jpg" alt="" class="img-responsive img-rounded center-block" /></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 galeria_zdjecia">
+                <a href="#obrazek4" data-toggle="modal"><img src="~/images/polaherbaciane.jpg" alt="" class="img-responsive img-rounded center-block" /></a>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section id="techniki">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>@Resource.Użyte_techniki</h2>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
+                <img src="~/images/HTML5.png" alt="" class="img-responsive center-block ikony" />
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <img src="~/images/css3-logo.png" alt="" class="img-responsive center-block ikony" />
+            </div>
+            <div class="col-xs-6 col-sm-6  col-md-3 col-lg-3">
+                <img src="~/images/bootstrap.png" alt="" class="img-responsive center-block ikony" />
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <img src="~/images/jquery-logo.png" alt="" class="img-responsive center-block ikony" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--DO SEKCJI GALERIA -->
+<div id="obrazek1" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>@Resource.Podroze_Kraj</h3>
+            </div>
+            <div class="modal-body text-center">
+                <img src="~/images/wyspy.jpg" alt="" class="img-responsive center-block " /><br><h4>@Resource.Wyspy_Phi_Phi</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">@Resource.Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="obrazek2" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>@Resource.Stany_Zjednoczone</h3>
+            </div>
+            <div class="modal-body text-center">
+                <img src="~/images/timesquare.jpg" alt="" class="img-responsive center-block " /><br><h4>Time Square</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">@Resource.Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="obrazek3" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>@Resource.Afryka</h3>
+            </div>
+            <div class="modal-body text-center ">
+                <img src="~/images/afryka.jpg" alt="" class="img-responsive center-block " /><br><h4>@Resource.Sawanna</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">@Resource.Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="obrazek4" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>@Resource.Indie</h3>
+            </div>
+            <div class="modal-body text-center ">
+                <img src="~/images/polaherbaciane.jpg" alt="" class="img-responsive center-block " /><br> <h4>@Resource.Pola_herbaciane</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">@Resource.Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--LOGOWANIE-->
+<div id="logowanie" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>@Resource.Logowanie</h3>
+            </div>
+            <div class="modal-body  ">
+        @if (!Request.IsAuthenticated)
+        {
+            using (@Html.BeginForm("Login", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+     
+                <div class="row">
+                    <div class="form-group logowanie">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            @Html.LabelFor(user => user.LoginViewModel.Email)
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            @Html.TextBoxFor(user => user.LoginViewModel.Email, new { @class = "form-control", @placeholder = "Email" })
+                            <p class="text-danger"> @Html.ValidationMessageFor(user => user.LoginViewModel.Email)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group logowanie">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            @Html.LabelFor(user => user.LoginViewModel.Password)
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            @Html.PasswordFor(user => user.LoginViewModel.Password, new { @class = "form-control", @placeholder = "Password" })
+                            <p class="text-danger"> @Html.ValidationMessageFor(user => user.LoginViewModel.Password)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p class="text-muted">@Html.LabelFor(m => m.LoginViewModel.RememberMe)</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        @Html.CheckBoxFor(m => m.LoginViewModel.RememberMe, new { @checked = "checked", @class = "checkbox" })
+                        <p class="text-danger">
+                            @Html.ValidationMessageFor(o => o.LoginViewModel.RememberMe)
+                        </p>
+                    </div>
+                </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="submit" class="btn btn-success center-block">@Resource.Zaloguj</button>
+                </div>
+                <div class="row text-center">
+                    <button type="button" class="btn btn-link center-block" data-dismiss="modal" data-target="#rejestracja" data-toggle="modal">@Resource.Zarejestruj</button>
+                </div>
+            </div>
+            }
+        }
+        else
+        {
+            <p class="text-center">@Resource.Jestes_zalogowany</p>
+        }
+       </div>
+    </div>
+  </div>
+</div>
+<!--Rejestracja-->
+<div id="rejestracja" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>@Resource.Rejestracja</h3>
+            </div>
+            <div class="modal-body ">
+    @if (!Request.IsAuthenticated)
+    {
+        using (@Html.BeginForm("Register", "Home"))
+        {
+
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="form-group logowanie">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            @Html.LabelFor(user => user.RegisterViewModel.Login)
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                        @Html.TextBoxFor(user => user.RegisterViewModel.Login, new { @class = "form-control", @placeholder = "Login" })
+                        <p class="text-danger"> @Html.ValidationMessageFor(user => user.RegisterViewModel.Login)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group logowanie">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        @Html.LabelFor(user => user.RegisterViewModel.Email)
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                        @Html.TextBoxFor(user => user.RegisterViewModel.Email, new { @class = "form-control", @placeholder = "Email" })
+                        <p class="text-danger"> @Html.ValidationMessageFor(user => user.RegisterViewModel.Email)</p>
+                    </div>
+              
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group logowanie">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        @Html.LabelFor(user => user.RegisterViewModel.Password)
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                        @Html.PasswordFor(user => user.RegisterViewModel.Password, new { @class = "form-control", @placeholder = "Password" })
+                        <p class="text-danger"> @Html.ValidationMessageFor(user => user.RegisterViewModel.Password)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group logowanie">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        @Html.LabelFor(user => user.RegisterViewModel.ConfirmPassword)
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        @Html.PasswordFor(user => user.RegisterViewModel.ConfirmPassword, new { @class = "form-control", @placeholder = "ConfirmPassword" })
+                        <p class="text-danger"> @Html.ValidationMessageFor(user => user.RegisterViewModel.ConfirmPassword)</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="modal-footer">
+                <div class="row">
+                    <button type="submit" class="btn btn-success center-block" >@Resource.Zarejestruj</button>
+                </div>
+            </div>
+         }
+                }
+                else
+                {
+                        <p>@Resource.Rejestracja</p>
+                }
+            </div>
+        </div>
+    </div>
+ </div>
+    <!--Wiadmosc-->
+    <div id="wiadomosc" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center ">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <div class="form-group text-center">
+                                    <h4>@Resource.Wyślij_Wiadomość</h4>
+                                    <textarea class="form-control" name="wiadomosc" rows="8" title="Dzięki za wyrażenie swojej opinii" data-toggle="tooltip" data-placement="top"></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                     <h4>@Resource.podpis</h4>
+                                    <input type="text" class="form-control" name="podpis" placeholder="Podpis"/>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-success pull-right" data-dismiss="modal">@Resource.Wyslij</button>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            </div>
+                        </div>
+                    </form>
+                    <a href="~/Properties/PublishProfiles/kostusiak.pubxml.user">~/Properties/PublishProfiles/kostusiak.pubxml.user</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+

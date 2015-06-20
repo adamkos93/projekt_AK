@@ -1,0 +1,120 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Adam Kostusiak</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- pliki CSS: -->
+    <link href="~/css/wlasny.css" rel="stylesheet" media="screen" />
+    <link href="~/css/animate.css" rel="stylesheet" media="screen" />
+    <link href="~/css/responsive.css" rel="stylesheet" media="screen" />
+    <!-- oryginalny Bootstrap -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!--fonty-->
+    <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700subset=latin,latin-ext" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand dropdown dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@if (Request.IsAuthenticated)
+                {
+                   @User.Identity.Name
+                }
+                else
+                {
+                   @:Konto                                                                                                                                        
+                }
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="margin-left:3.5%">
+                    <li class="dropdown-header">@Resource.Wybierz_język</li>
+                    @{
+                        foreach (var i in projekt_AK.Manage_Languages.AvailableLanguages)
+                        {
+                            <li>
+                                @Html.ActionLink(i.LangFullName, "ChangeLanguage", "Home", new { lang = i.LangCultureName }, null)
+                            </li>
+                        }
+                    }
+
+
+                    @*<li><a href="#">Polski <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></li>
+                    <li><a href="#">Angielski</a></li>*@
+              
+                    @*<li><a href="#wiadomosc" data-toggle="modal">Wyślij wiadomość</a></li>*@
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#wiadomosc" data-toggle="modal">@Resource.Wyślij_Wiadomość</a>
+                        </li>
+                    }
+                   
+
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="javascript:document.getElementById('logoutForm').submit()">@Resource.Wyloguj</a>
+                        </li>
+                    }
+
+                </ul>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navForButton">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navForButton">
+                <ul class="nav navbar-nav navbar-right" id="ul_nawigacja">
+                    <li class="active"><a href="#">@Resource.Start</a></li>
+                    <li><a href="#omnie">@Resource.O_mnie</a></li>
+                    <li><a href="#zakladki">@Resource.Zainteresowania</a></li>
+                    <li><a href="#galeria">@Resource.Galeria</a></li>
+                    <li><a href="#techniki">@Resource.Techniki</a></li>
+                    <li><a href="#logowanie" data-toggle="modal">@Resource.Logowanie</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+
+
+    <section id="stopka">
+        <div class="container">
+            <footer class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h4>Copyright 2015 &copy; Adam Kostusiak</h4>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                    <a href="#"><img src="~/images/googleplus.png" alt="" class="img-responsive" /></a>
+                    <a href="#"><img src="~/images/facebook.png" alt="" class="img-responsive" /></a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+    @if (Request.IsAuthenticated)
+    {
+        using (Html.BeginForm("Logoff", "Home", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+        {
+            @Html.AntiForgeryToken()
+        }
+    }
+    <script src="~/js/jquery-1.11.3.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/wlasny.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="http://skryptcookies.pl/cookie.js"></script>
+</body>
+</html>

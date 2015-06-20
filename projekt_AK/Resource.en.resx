@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Afryka" xml:space="preserve">
+    <value>Africa</value>
+  </data>
+  <data name="Angielski" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Galeria" xml:space="preserve">
+    <value>Galery</value>
+  </data>
+  <data name="Indie" xml:space="preserve">
+    <value>India</value>
+  </data>
+  <data name="Jestes_zalogowany" xml:space="preserve">
+    <value>You are already logged in</value>
+  </data>
+  <data name="Konto" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Link_repo" xml:space="preserve">
+    <value>Here's a link to my repository with project</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logowanie" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Motoryzacja" xml:space="preserve">
+    <value>Automotive</value>
+  </data>
+  <data name="Motoryzacja_Opis" xml:space="preserve">
+    <value>The passion for motoring inherited genes probably because of the small interested in cars as soon as I got older some very quickly started to watch Automotive . One of the "Top Gear" after a few episodes became my favorite program , it shows cars as works of art . Mazda 6 car is shown next to the picture as soon as I saw him under my block fell in love with him at first sight , the beautiful lines of the body in conjunction with the entire silhouette create an amazing effect this car at a decent price . For me, this is definitely a work of art .</value>
+  </data>
+  <data name="O_mnie" xml:space="preserve">
+    <value>About me</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="podpis" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="Podroze" xml:space="preserve">
+    <value>Travel</value>
+  </data>
+  <data name="Podroze_Kraj" xml:space="preserve">
+    <value>Tailand</value>
+  </data>
+  <data name="Podroze_Opis" xml:space="preserve">
+    <value>One of my secret dreams , it is left for Thailand, where the views are one of the napiękniejszych places on earth , wonderful landscapes , rich culture , exotic cuisine , all this invites me only and exclusively to plan their expedition dreams.</value>
+  </data>
+  <data name="Pola_herbaciane" xml:space="preserve">
+    <value>Tea fields</value>
+  </data>
+  <data name="Pole_confirm_pasword_walidacja" xml:space="preserve">
+    <value>The password and confirmation password do not match.</value>
+  </data>
+  <data name="Pole_email_jest_wymagane" xml:space="preserve">
+    <value>Field email is required</value>
+  </data>
+  <data name="Pole_email_walidacja" xml:space="preserve">
+    <value>Value in email field is not correct</value>
+  </data>
+  <data name="Pole_login_jest_wymagane" xml:space="preserve">
+    <value>Field login is required</value>
+  </data>
+  <data name="Pole_login_walidacja" xml:space="preserve">
+    <value>Value in login field is not correct</value>
+  </data>
+  <data name="Pole_password_jest_wymagane" xml:space="preserve">
+    <value>Field password is required</value>
+  </data>
+  <data name="Pole_password_walidacja" xml:space="preserve">
+    <value>The Password must be at least 6 characters long.</value>
+  </data>
+  <data name="Polski" xml:space="preserve">
+    <value>Polish</value>
+  </data>
+  <data name="Rejestracja" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Remember Me?</value>
+  </data>
+  <data name="Sawanna" xml:space="preserve">
+    <value>Savanna</value>
+  </data>
+  <data name="Sport" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="Sport_Klub" xml:space="preserve">
+    <value>Real Madrid</value>
+  </data>
+  <data name="Sport_Opis" xml:space="preserve">
+    <value>Sport became infected with the brothers who regularly watch the game league. I really like football, often finding my free time I meet with friends to kick the ball . As every football fan I have my favorite club . Real Madrid, which dates back to the late nineteenth century , the most successful club of all time. I was lucky enough to watch era in " galacticos " as the 10 -year-old . As the name suggests I'm talking about the biggest football star who played in those days . It was a beautiful spectacle for his actors were great players like Zidane , Raul , Carlos, Ronaldo , Figo and many others.</value>
+  </data>
+  <data name="Stany_Zjednoczone" xml:space="preserve">
+    <value>United States, New York</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Techniki" xml:space="preserve">
+    <value>Techniques</value>
+  </data>
+  <data name="Umiejetnosci" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="Użyte_techniki" xml:space="preserve">
+    <value>Techniques Used</value>
+  </data>
+  <data name="Witaj" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Wybierz_język" xml:space="preserve">
+    <value>Choose language</value>
+  </data>
+  <data name="Wyloguj" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="Wymarzone_podróże" xml:space="preserve">
+    <value>World Adventures</value>
+  </data>
+  <data name="Wyslij" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Wyspy_Phi_Phi" xml:space="preserve">
+    <value>Phi Phi Islands</value>
+  </data>
+  <data name="Wyślij_Wiadomość" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="Zainteresowania" xml:space="preserve">
+    <value>Interests</value>
+  </data>
+  <data name="Zaloguj" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Zamknij" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Zarejestruj" xml:space="preserve">
+    <value>Register</value>
+  </data>
+</root>

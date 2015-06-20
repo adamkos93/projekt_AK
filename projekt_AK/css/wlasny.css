@@ -1,0 +1,106 @@
+body{
+color:#ffffff;
+    padding-right: 0px !important;
+}
+body.modal-open {
+    overflow: visible;
+}
+.jumbotron{
+    background-image: url('../images/piasek.JPG');
+    background-size: 100% 100%;
+    min-height: 720px;
+    margin-bottom: 0px;
+}
+
+body .jumbotron h1,h5{
+    margin-top: 15rem;
+    color:#ffffff;
+}
+#omnie{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+#zakladki{
+    background-color: #ffffff;
+}
+}
+body .jumbotron h1{
+  text-transform: uppercase;
+    font-weight: 600;
+    line-height: 8rem;
+    color:#ffffff;
+}
+body .jumbotron h5{
+    font-size: 3.5rem;
+    font-weight: 300;
+    color:#ffffff;
+}
+
+body #omnie h1{
+font-weight: 600;
+}
+body #omnie h2{
+font-weight: 450;
+}
+body #zakladki h2{
+font-weight: 600;
+}
+body #cele h2{
+font-weight: 600;
+}
+body #galeria h2{
+font-weight: 600;
+}
+body #techniki h2{
+	font-weight: 600;
+	padding-bottom: 3rem;
+}
+
+
+#galeria{
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.galeria_zdjecia{
+    padding-bottom: 1.5rem;
+}
+.galeria_naglowek{
+ padding-bottom: 5rem;
+}
+
+.galeria_zdjecia a:hover img{
+    -webkit-animation:pulse 1.3s;
+    animation: pulse 1.3s;
+    opacity: 0.8;
+}
+#zakladki{
+    padding-top: 6rem;
+}
+.ikony{
+	padding-bottom: 4rem
+}
+
+
+#stopka{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    background-color: #000000;
+    color: #ffffff;
+} 
+#stopka h4{
+    color: #ffffff;
+}
+#stopka img{
+    float: right;
+    margin-right: 2rem;
+    width: 4rem;
+}
+#techniki{
+padding-bottom: 6rem;
+}
+.logowanie{
+padding-bottom: 3rem;
+}
